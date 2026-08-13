@@ -1,6 +1,5 @@
 #include<bits/stdc++.h>
 using namespace std;
-
 string str, p;
 vector<int> lps(1e6);
 
@@ -14,7 +13,6 @@ void get_lps(){
         lps[i] = j;
     }
 }
-
 int kmp() {
     int res = 0, j = 0;
     for(int i = 0; i < str.size(); i++) {    
@@ -28,10 +26,4 @@ int kmp() {
         }
     }
     return res;
-}
-
-int main(){
-    cin >> str >> p;
-    get_lps();
-    cout << kmp();
 }
