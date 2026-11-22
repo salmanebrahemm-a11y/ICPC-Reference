@@ -5,7 +5,7 @@ const int N = 1e6 + 1;
 int spf[N];
 vector<int> primes;
 
-void build() {
+void build() { // pre compute in main
     for (int i = 2; i < N; i++) {
         if (spf[i] == 0) {
             spf[i] = i;
