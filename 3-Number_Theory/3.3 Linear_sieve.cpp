@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-vector<int> linear_sieve(int n){
+vector<int> linear_sieve(int n){ // precompute
     vector<int> is_prime(n, 1), primes;
     is_prime[0] = is_prime[2] = 0;
     for(int i = 2;i < n;i++){
