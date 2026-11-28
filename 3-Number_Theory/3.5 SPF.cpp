@@ -5,7 +5,7 @@ const int N = 1e6 + 1;
 int spf[N];
 vector<int> primes;
 
-void build() { // pre compute
+void build() { // pre compute --> O(n)
     for (int i = 2; i < N; i++) {
         if (spf[i] == 0) {
             spf[i] = i;
@@ -18,7 +18,7 @@ void build() { // pre compute
     }
 }
 
-vector<int> factorize(int n) {
+vector<int> factorize(int n) { // O(log(n))
     vector<int> f;
     while (n > 1) {
         f.push_back(spf[n]); 

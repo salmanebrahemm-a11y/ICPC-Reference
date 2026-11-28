@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-vector<int> prime_factorization(int n){
+vector<int> prime_factorization(int n){ // O(sqrt(n));
     vector<int> factors;
     for(int i = 2;i * i <= n;i++){
         while(n % i == 0){

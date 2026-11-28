@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-vector<int> get_divisors(int n) {
+vector<int> get_divisors(int n) { // O(sqrt(n))
     vector<int> divs;
     for (int i = 1; 1LL * i * i <= n; i++) {
         if (n % i == 0) {

@@ -4,7 +4,7 @@ using namespace std;
 const int N = 1e6 + 1;
 vector<int> prime(N, 1);
 
-void sieve(){ // pre compute
+void sieve(){ // pre compute --> O(nlog(log(n)))
     prime[0] = prime[1] = 0;
     for(int i = 2;i < N;i++){
         if(prime[i]){

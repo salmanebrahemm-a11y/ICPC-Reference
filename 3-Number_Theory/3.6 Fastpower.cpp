@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int fast_pow(int a, int b, int mod) {
+int fast_pow(int a, int b, int mod) { // O(nlog(log(n)))
    int res = 1;
    a %= mod;
    while (b > 0) {
