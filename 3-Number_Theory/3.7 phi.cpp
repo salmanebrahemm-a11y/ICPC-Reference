@@ -20,7 +20,7 @@ void build() { // precompute --> O(nlog(log(n)))
 	for (int i = 1; i < N; i++) phii[i] = i;
 	for (int i = 2; i < N; i++) {
 		if (phii[i] == i) {
-			for (int j = i; j < N; j += i) { phii[j] -= phii[j] / i; }
+			for (int j = i; j < N; j += i) phii[j] -= phii[j] / i;
 		}
 	}
 }
